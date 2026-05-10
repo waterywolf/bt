@@ -1,0 +1,42 @@
+========================================
+ASSIGNMENT 1
+Setup and Evaluation of Cryptocurrency Wallets and Basic Bitcoin Operations
+========================================
+
+1. Install MetaMask extension from:
+https://metamask.io
+
+2. Open MetaMask and click "Create New Wallet".
+
+3. Create wallet using Gmail or Secret Recovery Phrase.
+
+4. Set and confirm a strong password.
+
+5. Save the Secret Recovery Phrase securely.
+
+6. Open:
+https://chainlist.org
+
+7. Connect MetaMask wallet to Chainlist.
+
+8. Search for "Ethereum Sepolia".
+
+9. Click "Add to MetaMask".
+
+10. Open Sepolia Faucet:
+https://cloud.google.com/application/web3/faucet/ethereum/sepolia
+
+11. Copy wallet address from MetaMask.
+
+12. Paste wallet address into faucet website.
+
+13. Receive Sepolia ETH.
+
+14. Open MetaMask and click "Send".
+
+15. Enter receiver wallet address and ETH amount.
+
+16. Confirm transaction.
+
+17. Verify successful transaction in Activity tab.
+```

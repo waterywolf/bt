@@ -1,0 +1,141 @@
+```txt id="h6n3ak"
+========================================
+ASSIGNMENT 3
+Preparing Build System and Building Bitcoin Core with Solidity Smart Contract Basics
+========================================
+
+PART A - BUILD BITCOIN CORE
+
+1. Open Ubuntu terminal.
+
+2. Create project directory:
+mkdir bitcoin_project
+
+3. Move into directory:
+cd bitcoin_project
+
+4. Clone Bitcoin repository:
+git clone https://github.com/bitcoin/bitcoin.git
+
+5. Move into repository:
+cd bitcoin
+
+6. Install dependencies:
+sudo apt update
+
+sudo apt install build-essential git libtool autotools-dev automake pkg-config bsdmainutils python3 libevent-dev libboost-system-dev libboost-filesystem-dev libboost-test-dev libboost-thread-dev libssl-dev libzmq3-dev
+
+7. Check repository files:
+ls
+
+8. Create build directory:
+mkdir build
+
+9. Move into build directory:
+cd build
+
+10. Configure project:
+cmake ..
+
+11. Build Bitcoin Core:
+make -j4
+
+12. Check build structure:
+ls
+
+13. Move into bin directory:
+cd bin
+
+14. Verify Bitcoin version:
+./bitcoind --version
+
+
+========================================
+PART B - HELLOWORLD SMART CONTRACT
+========================================
+
+1. Open Remix IDE:
+https://remix.ethereum.org
+
+2. Create Solidity file:
+HelloWorld.sol
+
+3. Write the following code:
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract HelloWorld {
+
+    string public message = "Hello Blockchain";
+
+    function getMessage() public view returns(string memory) {
+        return message;
+    }
+}
+
+4. Open Solidity Compiler tab.
+
+5. Compile HelloWorld.sol.
+
+6. Open Deploy & Run Transactions tab.
+
+7. Select Environment:
+Remix VM
+
+8. Click Deploy.
+
+9. Expand deployed contract.
+
+10. Click getMessage() function.
+
+11. Verify output:
+Hello Blockchain
+
+
+========================================
+PART C - ARRAY SMART CONTRACT
+========================================
+
+1. Create Solidity file:
+ArrayDemo.sol
+
+2. Write the following code:
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract ArrayDemo {
+
+    uint[] public numbers;
+
+    function addNumber(uint _num) public {
+        numbers.push(_num);
+    }
+
+    function getNumber(uint index) public view returns (uint) {
+        return numbers[index];
+    }
+
+    function getAllNumbers() public view returns (uint[] memory) {
+        return numbers;
+    }
+}
+
+3. Compile ArrayDemo.sol.
+
+4. Open Deploy & Run Transactions tab.
+
+5. Select Environment:
+Remix VM
+
+6. Click Deploy.
+
+7. Use addNumber() to insert values.
+
+8. Use getAllNumbers() to retrieve full array.
+
+9. Use getNumber(index) to retrieve specific value.
+
+10. Verify output successfully.
+```

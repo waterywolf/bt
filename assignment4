@@ -1,0 +1,54 @@
+```txt id="l0vq6a"
+========================================
+ASSIGNMENT 4
+Deploy a Simple Smart Contract to the Ethereum Blockchain
+========================================
+
+1. Open Remix IDE:
+https://remix.ethereum.org
+
+2. Create Solidity file:
+SimpleStorage.sol
+
+3. Write the following code:
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+
+    uint public data;
+
+    function setData(uint _data) public {
+        data = _data;
+    }
+
+    function getData() public view returns(uint) {
+        return data;
+    }
+}
+
+4. Open Solidity Compiler tab.
+
+5. Compile SimpleStorage.sol.
+
+6. Open Deploy & Run Transactions tab.
+
+7. Select Environment:
+Remix VM
+
+8. Select Contract:
+SimpleStorage
+
+9. Click Deploy.
+
+10. Expand deployed contract.
+
+11. Enter a number in setData() function.
+
+12. Click setData button.
+
+13. Click getData() function.
+
+14. Verify returned value successfully.
+```
